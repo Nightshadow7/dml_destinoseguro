@@ -217,3 +217,11 @@ select a.id_prod,a.nom_prod,a.id_marca,b.nom_marca
 from tab_prod as a, tab_marcas as b
 where (a.id_prod = 2 OR a.id_prod = 8) AND
 	   a.id_marca = b.id_marca
+
+
+select a.id_prov,b.nom_prov,a.id_prod,c.nom_prod,d.nom_marca, a.val_compra, a.val_venta
+from tab_prodprov as a, tab_prov as b, tab_prod as c, tab_marcas as d
+where (a.id_prov = b.id_prov and a.id_prod = c.id_prod) and (c.id_marca = d.id_marca)
+
+order by 5 asc
+
