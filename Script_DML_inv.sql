@@ -225,3 +225,7 @@ where (a.id_prov = b.id_prov and a.id_prod = c.id_prod) and (c.id_marca = d.id_m
 
 order by 5 asc
 
+select a.id_prov  from tab_prodprov as a,
+group by 1
+select by 1
+
